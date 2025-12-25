@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Gynlove</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🖤 Gynlove</h1>
+
+        <form action="/find" method="post" enctype="multipart/form-data">
+            <label>Chọn file .txt</label>
+            <input type="file" name="file" required>
+
+            <label>Nhập từ khóa</label>
+            <input type="text" name="keyword" placeholder="Keyword..." required>
+
+            <button type="submit">Find</button>
+        </form>
+
+        <p class="note">
+            File chỉ được xử lý tạm thời – không lưu trên server.
+        </p>
+    </div>
+</body>
+</html>
